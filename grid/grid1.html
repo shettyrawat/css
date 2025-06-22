@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container {
+            /* FR UNIT
+            
+            iske liye width dete hain
+            if width =40px
+            then if
+            grid-template-columns/rows: 1fr 2fr 1fr
+            columns or rows given width k teen hisso but jayegi
+            we also can use gap:\;
+            row-gap;,column-gap; */
+            border: 2px solid green;
+            display: grid;
+
+            background-color: #5b472d;
+            grid-template-columns: 100px 70px;
+            grid-template-rows: 120px 100px 80px;
+        }
+
+        .item {
+            width: 40px;
+            height: 50px;
+          
+            background-color: blueviolet;
+        }
+
+        /* grid overlaping */
+        
+        .item-3{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item item-3">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

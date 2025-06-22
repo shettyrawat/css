@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        /* @media not|only mediatype and (expressions) {
+             CSS-Code;
+         } */
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: yellow;
+            }
+
+           
+            .boxes {
+                flex-direction: column;  /* 455px is for mobile phone  */
+            }
+        }
+
+        /*  second -
+
+        @media screen and (orientation: portrait/landscape){
+            body{
+              border: 2px solid blue;
+            }
+        } */
+
+        .box {
+            width: 344px;    
+            height: 344px;
+            background-color: maroon;
+            padding: 4px;
+            margin: 4px;
+        }
+
+        .boxes {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hey i am the body of shettyrwt
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>

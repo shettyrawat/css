@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css variables</title>
+
+
+    <style>
+        :root {
+            --color: rgb(224, 10, 106);
+            --color1: rgb(0, 183, 255);
+            --defpad: 20px ;
+            --defop: 0.1 ;
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+
+
+            .nav {
+                
+                color: var(--color1);
+                background-color: var(--color);
+            }
+
+            .container {
+                color: var(--color);
+                background-color: var(--color1);
+            }
+
+        
+            ul li {
+               opacity:  var(--defop);
+                padding: var(--defpad) ;}
+               border: 10px solid  rosybrown;
+            
+            ul li:first-child {
+                background-color: rgb(0, 255, 55);
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <ul>
+            <li>
+                shetty
+            </li>
+            <li>
+                rahul
+            </li>
+            <li>
+                dheeraj
+            </li>
+
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, saepe dicta iusto reiciendis beatae non
+        asperiores quia neque ratione tenetur eaque dolor nostrum delectus! Deleniti eaque cumque vitae odio officia.
+    </div>
+
+</body>
+
+</html>
